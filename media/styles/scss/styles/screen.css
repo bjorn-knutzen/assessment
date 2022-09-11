@@ -38,6 +38,7 @@ h2 {
 h3 {
   color: #f22626;
   font-size: 3.2rem;
+  text-transform: uppercase;
 }
 
 body {
@@ -361,25 +362,13 @@ button--secondary,
 
 .grid-container__grid-block {
   width: 100%;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 @media only screen and (max-width: 1140px) {
   .grid-container__grid-block {
     display: block;
   }
-}
-
-.footer__top {
-  background: yellow;
-}
-
-.footer__center {
-  background: orange;
-}
-
-.footer__bottom {
-  background-color: red;
 }
 
 * {
