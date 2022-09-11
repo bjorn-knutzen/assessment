@@ -1,52 +1,40 @@
 .search__active-field{
-
     display: inline-block;
     background-image: url("../../../images/ico-magnifier.png");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     transition: all 0.2s ease;
-
-    &:hover{
-        background-color: green;
-        border-bottom: 4px solid red;
-        transition: all 0.2s ease;
-    }
 }
 
-.search{
+.search {
     position: relative;
 
     &__field-holder{
         opacity: 0;
-        width: 100%;
+        width: 50%;
         height: 0;
         overflow: hidden;
         top: 0;
         right: 0;
         transition: all 0.2s ease;
-    }
 
-    &__field-holder--active{
-        width: 100%;
-		max-width: 1275px;
-		margin: auto;
-        height: 65px;
-        opacity: 1;
-        background: $tert-light-brand-color;
-        padding: 14px 20px ;
-        // position: absolute;
-		position: relative;
-        display: block;
-		top: 12px;
-        z-index: 100;
-        transition: all 0.2s ease;
-        box-shadow: 0 8px 8px -8px brown;
-		border-bottom-left-radius: 30px 30px;
-
-        // @include media('<tablet') {
-        //     
-        // }
+		&--active{
+			width: 100%;
+			max-width: 1275px;
+			margin: auto;
+			height: 65px;
+			opacity: 1;
+			padding: 14px 20px ;
+			background: $prim-brand-color;
+			position: relative;
+			display: block;
+			top: 12px;
+			z-index: 100;
+			transition: all 0.2s ease;
+			box-shadow: 0 8px 8px -8px brown;
+			border-bottom-left-radius: 30px 30px;
+		}
     }
 
     .default-button{
@@ -58,15 +46,22 @@
         border: none;
         line-height: 1;
         box-sizing: border-box;
-        border-bottom: 3px solid gold;
-        font-size: $m-text;
+        border-bottom: 3px solid $sec-brand-color;
+        font-size: $ms-text;
+		cursor: pointer;
        
         &:hover{
-            border-bottom: 2px solid purple;
+            border-bottom: 2px solid $sec-light-brand-color;
         }
     }
-}
 
-.search__close{
-    background-image: url("../../../images/ico-close.png");
+	&__input-field {
+		height: 40px;
+		width: 80%;
+		border: 0;
+		border-left: 2px solid $tert-brand-color;
+		border-bottom: 2px solid $tert-brand-color;
+		padding-left: 10px;
+		font-size: $ms-text;
+	}
 }

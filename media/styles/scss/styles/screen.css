@@ -523,20 +523,13 @@ button--secondary,
   transition: all 0.2s ease;
 }
 
-.search__active-field:hover {
-  background-color: green;
-  border-bottom: 4px solid red;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
 .search {
   position: relative;
 }
 
 .search__field-holder {
   opacity: 0;
-  width: 100%;
+  width: 50%;
   height: 0;
   overflow: hidden;
   top: 0;
@@ -551,8 +544,8 @@ button--secondary,
   margin: auto;
   height: 65px;
   opacity: 1;
-  background: #fff;
   padding: 14px 20px;
+  background: #00c4ff;
   position: relative;
   display: block;
   top: 12px;
@@ -574,16 +567,23 @@ button--secondary,
   line-height: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 3px solid gold;
-  font-size: 3rem;
+  border-bottom: 3px solid #f22626;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .search .default-button:hover {
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid #d1747d;
 }
 
-.search__close {
-  background-image: url("../../../images/ico-close.png");
+.search__input-field {
+  height: 40px;
+  width: 80%;
+  border: 0;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding-left: 10px;
+  font-size: 2rem;
 }
 
 .image-holder {
