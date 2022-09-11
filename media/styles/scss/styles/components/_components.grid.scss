@@ -1,0 +1,22 @@
+.grid-container {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    -ms-box-orient: horizontal;
+    list-style-type: none;
+
+    @media only screen and (max-width: 1140px) {
+        display: block;
+        align-items: inherit;
+    }
+
+    &__grid-block {
+        width: 100%;
+        padding: 5px;
+
+        @media only screen and (max-width: 1140px) {
+            display: block;
+        }
+    }
+}

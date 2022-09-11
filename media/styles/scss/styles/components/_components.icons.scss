@@ -1,0 +1,26 @@
+.icon {
+	min-width: 38px;
+	height: 38px;
+	text-indent: -100%;
+	overflow: hidden;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+	border-radius: 20px;
+	font-size:  0;
+
+	&:after {
+		content: "O";
+		display: block;
+		width: 100%;
+		position: absolute;
+	    top: 25%;
+    	left: 50%;
+		font-size: $ms-text;
+		color: $tert-brand-color;
+		text-align: center;
+	}
+}
+
+

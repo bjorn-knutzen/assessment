@@ -1,0 +1,37 @@
+
+//FONT TYPES
+
+a, p {
+    font-family: $main-font;
+    font-size: $ms-text;
+	color: $tert-brand-color;
+}
+
+a {
+	text-decoration: underline;
+}
+
+h1,
+h2
+{
+	font-size: $xl-text;
+	font-family: $main-font;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: $thin;
+}
+
+h1 {
+	color: $sec-brand-color;
+}
+
+h2{
+	color: $sec-brand-color;
+	opacity: 0.6;
+}
+
+h3{
+	color: $sec-brand-color;
+	font-size: $l-text;
+}
+

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+//COLORS
+
+$prim-brand-color:         #00c4ff !default;
+$prim-light-brand-color:   #bff0ff !default;
+
+$sec-brand-color:          #f22626 !default;
+$sec-light-brand-color:    #d1747d !default;
+
+$tert-brand-color:         #000 !default;
+$tert-light-brand-color:   #fff !default;
+
+//FONT SIZES
+html {
+    font-size: 62.5% !important;
+}
+
+$ms-text:           2rem !default;
+$m-text:            3rem !default;
+$l-text:            3.2rem !default;
+$xl-text: 			11rem !default;
+
+//FONT WEIGHT
+
+$thin: 			    200 !default;
+$normal: 			400 !default;
+
+$main-font:         'Arial';
+
+//FRAME
+
+$default-width: 1275px;
