@@ -9,8 +9,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="media/styles/normalize.min.css"> -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="media/styles/normalize.min.css">
         <link rel="stylesheet" href="media/styles/scss/styles/screen.css">
 		<script src="https://kit.fontawesome.com/3e8c8229ea.js" crossorigin="anonymous"></script>	
     </head>
@@ -18,7 +18,6 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <header class="header">
 			<nav class="nav cell">
 				<a href="#" class="button button--secondary">
@@ -35,14 +34,24 @@
 						<a href="#" class="button button--secondary">Watch and read</a>
 					</li>
 					<li>
-						<button class="button icon button--secondary" aria-label="Search" type="button">search</button>
+						<button class="icon button--secondary search__active-field fa-solid fa-magnifying-glass" aria-label="Search" type="button">search</button>
 					</li>
 					<li>
 						<a href="#" class="button button--default">Boutique</a>
 					</li>
 				</ul>
-				<button  class="button button--secondary nav--button" aria-label="Menu" id="nav-button">Menu</button>
+				<button  class="button button--secondary nav--button" aria-label="Menu" id="nav-button">Menu
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 			</nav>
+			<div class="search">
+				<div class="search__field-holder search__field-holder--active">
+					<input class="input-text" placeholder="Waar bent u naar opzoek?" type="text" name="search-terms" value="" size="30" maxlength="128">
+					<input class="default-button default-button__brand-color--sec" type="submit" value="Zoeken">
+				</div>
+			</div>
 		</header>		
 		<div class="hero">
 			<div class="content cell">
@@ -70,18 +79,36 @@
 				<span class="image-holder">
 					<img src="media/images/art-exposition.jpg" alt="picture of art">
 				</span>
+				<article class="small">
+					<p>
+						Nam euismod fermentum auctor. Maecenas rutrum tristique libero, vel placerat libero gravida vel. Nulla eget nibh felis. Duis ante est, rutrum eu sollicitudin ut, semper nec elit.
+					</p>
+				</article>
 			</div>
-			<span class="image-holder">
-				<img src="img_girl.jpg" alt="picture of art">
-			</span>
+
 			<div class="content cell">
-				<div class="carrousel"></div>
+				<div class="slideshow">
+					<div class="slideshow__item fade">
+						<img src="media/images/carrousel-image.jpg" style="width:100%">
+						<div class="slideshow__text">Slide one</div>
+					</div>
+
+					<div class="slideshow__item fade">
+						<img src="media/images/art-exposition.jpg" style="width:100%">
+						<div class="slideshow__text">Slide Two</div>
+					</div>
+					<a class="slideshow__prev" onclick="plusSlides(-1)">Previous</a>
+					<a class="slideshow__next" onclick="plusSlides(1)">Next</a>
+				</div>
 			</div>
 		</div>
 		<footer class="footer">
-			<span class="image-holder">
-				<img src="img_girl.jpg" alt="mahmah logo">
-			</span>
+			<div class="content cell">
+				<span class="image-holder">
+					<img src="media/images/mahmah-logo.jpg" alt="mahmah logo">
+				</span>
+			</div>
+
 			<address class="footer__top grid-container cell">
 				<span class="grid-container__grid-block">
 					<p>

@@ -50,10 +50,10 @@
 			border-bottom-left-radius: 30px 30px;
 			box-shadow: 0px 1px 1px 1px rgba($tert-brand-color, 0.3);
 			display: none;
-		}		
-		
-		&__open {
-
+		}	
+        
+        		
+		&--open {
 			@media only screen and (max-width: 1140px) {
 				display: block;
 			}
@@ -79,13 +79,75 @@
 	&--button {
 		position: absolute;
 		right: 12px;
-		top: 22px;
+		top: 12px;
 		display: none;
 		z-index: 100;
+		font-size: $ms-text;
+		padding-left: 50px;
 
 		@media only screen and (max-width: 1140px) {
 			display: block;
 		}
+
+		span {
+			display: block;
+			position: absolute;
+			height: 5px;
+			width: 3rem;
+			background: $tert-brand-color;
+			border-radius: 9px;
+			opacity: 1;
+			left: 10px;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+		}
+		
+		span:nth-child(1) {
+		  top: 9px;
+		}
+		
+		span:nth-child(2) {
+		  top: 17px;
+		}
+		
+		span:nth-child(3) {
+		  top: 25px;
+		}
+	}
+
+	&__open {
+
+		@media only screen and (max-width: 1140px) {
+			display: block;
+		}
+
+		
+	span:nth-child(1) {
+		top: 18px;
+		-webkit-transform: rotate(135deg);
+		-moz-transform: rotate(135deg);
+		-o-transform: rotate(135deg);
+		transform: rotate(135deg);
+	  }
+	  
+	  span:nth-child(2) {
+		opacity: 0;
+		left: -60px;
+	  }
+	  
+	  span:nth-child(3) {
+		top: 18px;
+		-webkit-transform: rotate(-135deg);
+		-moz-transform: rotate(-135deg);
+		-o-transform: rotate(-135deg);
+		transform: rotate(-135deg);
+	  }
 	}
 }
 
